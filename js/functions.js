@@ -15,16 +15,17 @@ function scoring(ron){
     let han = document.getElementById('hanCounter').value;
     let fu = document.getElementById('fuCounter').value;
     let honba = document.getElementById('honbaCounter').value;
+    let basicPoints = fu * 2 ** (2 + han);
 
     console.log(ron);
     console.log(dealer);
     console.log(han);
     console.log(fu);
     console.log(honba);
+    console.log(basicPoints);
 
     switch(han){
         default:
-            let basicPoints = fu * 2 ** (2 + han);
             basicPoints = Math.min(2000,basicPoints);
     }
 
