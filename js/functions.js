@@ -23,6 +23,8 @@ function scoring(ron){
     console.log(fu);
     console.log(honba);
     console.log(basicPoints);
+    console.log(Math.pow(2,han + 2));
+    console.log(fu * Math.pow(2,han + 2));
 
     switch(han){
         default:
