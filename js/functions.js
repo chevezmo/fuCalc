@@ -1,7 +1,7 @@
 function increment(param) {
-    document.getElementById(param).stepUp();
+    document.getElementById(`${param}`).stepUp();
 }
 
 function decrement(param){
-    document.getElementById(param).stepDown();
+    document.getElementById(`${param}`).stepDown();
 }
