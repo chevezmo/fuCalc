@@ -20,6 +20,18 @@ function scoring(){
     let basicPoints = fu * Math.pow(2,parseInt(han) + 2);
 
     switch(han){
+        case 6:
+        case 7:
+            basicPoints = 3000;
+        case 8:
+        case 9:
+        case 10:
+            basicPoints = 4000;
+        case 11:
+        case 12:
+            basicPoints = 6000;
+        case 13:
+            basicPoints = 8000;
         default:
             basicPoints = Math.min(2000,basicPoints);
     }
@@ -31,9 +43,9 @@ function scoring(){
     }
 
     if(dealer){
-        document.getElementById('ron').value = roundUp(basicPoints * 6) + (honba * 300)
-        document.getElementById('tsumo1').value = roundUp(basicPoints * 2) + (honba * 100)
-        document.getElementById('tsumo2').value = ""
+        document.getElementById('ron').value = roundUp(basicPoints * 6) + (honba * 300);
+        document.getElementById('tsumo1').value = roundUp(basicPoints * 2) + (honba * 100);
+        document.getElementById('tsumo2').value = "";
     }
 
 }
