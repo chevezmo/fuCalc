@@ -1,10 +1,16 @@
 function increment(param) {
     document.getElementById(`${param}`).stepUp();
+    if(document.getElementById(`${param}`).value >= 35){
+        document.getElementById(`${param}`).stepUp();  
+    }
     scoring();
 }
 
 function decrement(param){
     document.getElementById(`${param}`).stepDown();
+    if(document.getElementById(`${param}`).value >= 35){
+        document.getElementById(`${param}`).stepDown();
+    }
     scoring();
 }
 
