@@ -26,4 +26,12 @@ function scoring(ron){
         document.getElementById('tsumo1').value = roundUp(basicPoints * 2) + (honba * 100);
         document.getElementById('tsumo2').value = roundUp(basicPoints) + (honba * 100);
     }
+
+    console.log(dealer);
+    console.log(ron);
+    console.log(han);
+    console.log(fu);
+    console.log(honba);
+    console.log(roundUp(basicPoints * 2) + (honba * 100));
+    console.log(roundUp(basicPoints) + (honba * 100));
 }
