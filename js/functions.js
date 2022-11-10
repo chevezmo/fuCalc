@@ -14,10 +14,10 @@ function roundUp(num){
 
 function scoring(){
     let dealer = document.getElementById('dealerCheckbox').checked;
-    let han = document.getElementById('hanCounter').value;
+    let han = parseInt(document.getElementById('hanCounter').value);
     let fu = document.getElementById('fuCounter').value;
     let honba = document.getElementById('honbaCounter').value;
-    let basicPoints = fu * Math.pow(2,parseInt(han) + 2);
+    let basicPoints = fu * Math.pow(2,han + 2);
 
     switch(han){
         case 6:
