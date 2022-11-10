@@ -1,0 +1,12 @@
+body{
+    font-family: arial;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}

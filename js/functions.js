@@ -21,7 +21,7 @@ function roundUp(num){
 function scoring(){
     let dealer = document.getElementById('dealerCheckbox').checked;
     let han = parseInt(document.getElementById('hanCounter').value);
-    let fu = document.getElementById('fuCounter').value;
+    let fu = parseInt(document.getElementById('fuCounter').value);
     let honba = document.getElementById('honbaCounter').value;
     let basicPoints = fu * Math.pow(2,han + 2);
 
@@ -57,6 +57,12 @@ function scoring(){
         document.getElementById('ron').value = roundUp(basicPoints * 6) + (honba * 300);
         document.getElementById('tsumo1').value = roundUp(basicPoints * 2) + (honba * 100);
         document.getElementById('tsumo2').style.visibility = 'hidden';
+    }
+
+    if(fu == 20 && han < 5){
+        document.getElementById('ron').style.visibility = 'hidden';
+    } else {
+        document.getElementById('ron').style.visibility = 'visible';
     }
 
 }
