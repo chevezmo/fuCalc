@@ -10,7 +10,7 @@
 
     <title>Fu Calculator</title>
   </head>
-  <body>
+  <body onload="scoring(false)">
 
     <label for="hanCounter">Han</label>
   
@@ -38,8 +38,8 @@
     <br>
 
     <label for="scoreTsumo">Tsumo</label>
-    <input id="tsumo1" type="number" onload="scoring(false)" min="300" max="48000" step="100" readonly />
-    <input id="tsumo2" type="number" onload="scoring(false)" min="300" max="48000" step="100" readonly />
+    <input id="tsumo1" type="number" value="48000" min="300" max="48000" step="100" readonly />
+    <input id="tsumo2" type="number" value="48000" min="300" max="48000" step="100" readonly />
 
     
 
