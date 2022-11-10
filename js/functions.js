@@ -23,15 +23,19 @@ function scoring(){
         case 6:
         case 7:
             basicPoints = 3000;
+            break;
         case 8:
         case 9:
         case 10:
             basicPoints = 4000;
+            break;
         case 11:
         case 12:
             basicPoints = 6000;
+            break;
         case 13:
             basicPoints = 8000;
+            break;
         default:
             basicPoints = Math.min(2000,basicPoints);
     }
