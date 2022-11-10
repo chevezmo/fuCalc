@@ -1,9 +1,11 @@
 function increment(param) {
     document.getElementById(`${param}`).stepUp();
+    scoring();
 }
 
 function decrement(param){
     document.getElementById(`${param}`).stepDown();
+    scoring();
 }
 
 function roundUp(num){
