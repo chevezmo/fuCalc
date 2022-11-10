@@ -60,9 +60,11 @@ function scoring(){
     }
 
     if(fu == 20 && han < 5){
-        document.getElementById('ron').style.visibility = 'hidden';
+        document.getElementById('ronLabel').style.display = 'none';
+        document.getElementById('ron').style.display = 'none';
     } else {
-        document.getElementById('ron').style.visibility = 'visible';
+        document.getElementById('ronLabel').style.display = 'show';
+        document.getElementById('ron').style.display = 'show';
     }
 
 }
