@@ -16,6 +16,12 @@ function scoring(ron){
     let fu = document.getElementById('fuCounter').value;
     let honba = document.getElementById('honbaCounter').value;
 
+    console.log(ron);
+    console.log(dealer);
+    console.log(han);
+    console.log(fu);
+    console.log(honba);
+
     switch(han){
         default:
             let basicPoints = fu * 2 ** (2 + han);
@@ -27,11 +33,6 @@ function scoring(ron){
         document.getElementById('tsumo2').value = roundUp(basicPoints) + (honba * 100);
     }
 
-    console.log(dealer);
-    console.log(ron);
-    console.log(han);
-    console.log(fu);
-    console.log(honba);
     console.log(roundUp(basicPoints * 2) + (honba * 100));
     console.log(roundUp(basicPoints) + (honba * 100));
 }
