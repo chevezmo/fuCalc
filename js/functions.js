@@ -19,6 +19,9 @@ function scoring(){
     let honba = document.getElementById('honbaCounter').value;
     let basicPoints = fu * Math.pow(2,han + 2);
 
+    console.log(typeof han);
+    console.log(han);
+
     switch(han){
         case 6:
         case 7:
