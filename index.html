@@ -22,15 +22,15 @@
           <label for="hanCounter">Han</label>
         </div>
 
-        <div class="col-0">
+        <div class="col-md-auto">
           <button type="button" onclick="decrement('hanCounter')" class="btn btn-dark btn-sm">-</button>
         </div>
 
-        <div class="col-1">
+        <div class="col-md-auto">
           <input id="hanCounter" type="number" value="1" min="1" max="13" readonly />
         </div>
 
-        <div class="col-0">
+        <div class="col-md-auto">
           <button onclick="increment('hanCounter')" class="btn btn-dark btn-sm">+</button>
         </div>
 
@@ -41,15 +41,15 @@
           <label for="hanCounter">Fu</label>
         </div>
 
-        <div class="col-0">
+        <div class="col-md-auto">
           <button onclick="decrement('fuCounter')" class="btn btn-dark btn-sm">-</button>
         </div>
 
-        <div class="col-1">
+        <div class="col-md-auto">
           <input id="fuCounter" type="number" value="30" min="20" max="110" step="5" readonly />
         </div>
 
-        <div class="col-0">
+        <div class="col-md-auto">
           <button onclick="increment('fuCounter')" class="btn btn-dark btn-sm">+</button>
         </div>
 
@@ -60,25 +60,25 @@
           <label for="honbaCounter">Honba</label>
         </div>
 
-        <div class="col-0">
+        <div class="col-md-auto">
           <button onclick="decrement('honbaCounter')" class="btn btn-dark btn-sm">-</button>
         </div>
 
-        <div class="col-1">
+        <div class="col-md-auto">
           <input id="honbaCounter" type="number" value="0" min="0" max="100" readonly />
         </div>
 
-        <div class="col-0">
+        <div class="col-md-auto">
           <button onclick="increment('honbaCounter')" class="btn btn-dark btn-sm">+</button>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-1">
           <label for="dealerCheckbox">Dealer</label>
         </div>
 
-        <div class="col-0">
+        <div class="col-md-auto">
           <input type="checkbox" onchange="scoring()" id="dealerCheckbox" name="dealerCheckbox" value="true">
         </div>
 
@@ -89,7 +89,7 @@
           <label for="scoreRon">Ron</label>
         </div>
 
-        <div class="col-0">
+        <div class="col-md-auto">
           <input id="ron" type="number" min="1000" max="48000" step="100" readonly />
         </div>
 
@@ -100,11 +100,11 @@
           <label for="scoreTsumo">Tsumo</label>
         </div>
 
-        <div class="col-0">
+        <div class="col-md-auto">
           <input id="tsumo1" type="number" value="48000" min="300" max="16000" step="100" readonly />
         </div>
 
-        <div class="col-1">
+        <div class="col-md-auto">
           <input id="tsumo2" type="number" value="48000" min="300" max="16000" step="100" readonly />
         </div>
 
