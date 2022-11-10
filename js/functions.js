@@ -28,6 +28,6 @@ function scoring(ron){
     }
 
     if(!dealer && ron){
-        document.getElementById('ron').value = roundUp(basicPoints * 4) + (honba + 300);
+        document.getElementById('ron').value = roundUp(basicPoints * 4) + (honba * 300);
     }
 }
