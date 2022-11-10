@@ -19,9 +19,6 @@ function scoring(){
     let honba = document.getElementById('honbaCounter').value;
     let basicPoints = fu * Math.pow(2,han + 2);
 
-    console.log(typeof han);
-    console.log(han);
-
     switch(han){
         case 6:
         case 7:
@@ -47,12 +44,13 @@ function scoring(){
         document.getElementById('ron').value = roundUp(basicPoints * 4) + (honba * 300);
         document.getElementById('tsumo1').value = roundUp(basicPoints * 2) + (honba * 100);
         document.getElementById('tsumo2').value = roundUp(basicPoints) + (honba * 100);
+        document.getElementById('tsumo2').style.visibility = 'visible';
     }
 
     if(dealer){
         document.getElementById('ron').value = roundUp(basicPoints * 6) + (honba * 300);
         document.getElementById('tsumo1').value = roundUp(basicPoints * 2) + (honba * 100);
-        document.getElementById('tsumo2').value = "";
+        document.getElementById('tsumo2').style.visibility = 'hidden';
     }
 
 }
