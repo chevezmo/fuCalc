@@ -17,15 +17,6 @@ function scoring(ron){
     let honba = document.getElementById('honbaCounter').value;
     let basicPoints = fu * Math.pow(2,parseInt(han) + 2);
 
-    console.log(ron);
-    console.log(dealer);
-    console.log(han);
-    console.log(fu);
-    console.log(honba);
-    console.log(basicPoints);
-    console.log(Math.pow(2,han + 2));
-    console.log(fu * Math.pow(2,han + 2));
-
     switch(han){
         default:
             basicPoints = Math.min(2000,basicPoints);
@@ -36,6 +27,7 @@ function scoring(ron){
         document.getElementById('tsumo2').value = roundUp(basicPoints) + (honba * 100);
     }
 
-    console.log(roundUp(basicPoints * 2) + (honba * 100));
-    console.log(roundUp(basicPoints) + (honba * 100));
+    if(!dealer && ron){
+        document.getElementById('ron').value = roundUp(basicPoints * 4) + (honba + 300)
+    }
 }
