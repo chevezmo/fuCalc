@@ -23,6 +23,7 @@ function scoring(ron){
     }
 
     if(!dealer && !ron){
-        return [roundUp(basicPoints * 2) + (honba * 100), roundUp(basicPoints) + (honba * 100)];
+        document.getElementById('tsumo1').value = roundUp(basicPoints * 2) + (honba * 100);
+        document.getElementById('tsumo2').value = roundUp(basicPoints) + (honba * 100);
     }
 }
