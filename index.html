@@ -18,20 +18,22 @@
     <div class="container-fluid">
 
       <div class="row">
-        <div class="col-md-auto">
+        <div class="col-1">
           <label for="hanCounter">Han</label>
         </div>
 
         <div class="col-md-auto">
           <button type="button" onclick="decrement('hanCounter')" class="btn btn-dark btn-sm">-</button>
-        </div>
-
-        <div class="col-md-auto">
           <input id="hanCounter" type="number" value="1" min="1" max="13" readonly />
+          <button onclick="increment('hanCounter')" class="btn btn-dark btn-sm">+</button>
         </div>
 
         <div class="col-md-auto">
-          <button onclick="increment('hanCounter')" class="btn btn-dark btn-sm">+</button>
+          
+        </div>
+
+        <div class="col-md-auto">
+          
         </div>
 
       </div>
@@ -43,14 +45,16 @@
 
         <div class="col-md-auto">
           <button onclick="decrement('fuCounter')" class="btn btn-dark btn-sm">-</button>
-        </div>
-
-        <div class="col-md-auto">
           <input id="fuCounter" type="number" value="30" min="20" max="110" step="5" readonly />
+          <button onclick="increment('fuCounter')" class="btn btn-dark btn-sm">+</button>
         </div>
 
         <div class="col-md-auto">
-          <button onclick="increment('fuCounter')" class="btn btn-dark btn-sm">+</button>
+          
+        </div>
+
+        <div class="col-md-auto">
+          
         </div>
 
       </div>

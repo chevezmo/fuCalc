@@ -59,12 +59,4 @@ function scoring(){
         document.getElementById('tsumo2').style.visibility = 'hidden';
     }
 
-    if(fu == 20 && han < 5){
-        document.getElementById('ronLabel').style.display = 'none';
-        document.getElementById('ron').style.display = 'none';
-    } else {
-        document.getElementById('ronLabel').style.display = 'show';
-        document.getElementById('ron').style.display = 'show';
-    }
-
 }
