@@ -15,7 +15,7 @@ function scoring(ron){
     let han = document.getElementById('hanCounter').value;
     let fu = document.getElementById('fuCounter').value;
     let honba = document.getElementById('honbaCounter').value;
-    let basicPoints = fu * 2 ** (2 + han);
+    let basicPoints = fu * (2 ** (2 + han));
 
     console.log(ron);
     console.log(dealer);
