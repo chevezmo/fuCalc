@@ -14,9 +14,15 @@
 
     <label for="hanCounter">Han</label>
   
-    <button onclick="decrement()">-</button>
+    <button onclick="decrement('hanCounter')">-</button>
     <input id="hanCounter" type="number" value="1" min="1" max="13" readonly= />
-    <button onclick="increment()">+</button>
+    <button onclick="increment('hanCounter')">+</button>
+
+    <label for="hanCounter">Fu</label>
+  
+    <button onclick="decrement('fuCounter')">-</button>
+    <input id="fuCounter" type="number" value="20" min="20" max="110" step="10" readonly= />
+    <button onclick="increment('fuCounter')">+</button>
 
 
     <!-- Optional JavaScript -->

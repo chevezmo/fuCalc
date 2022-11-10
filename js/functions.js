@@ -1,7 +1,7 @@
-function increment() {
-    document.getElementById('hanCounter').stepUp();
+function increment(param) {
+    document.getElementById(param).stepUp();
 }
 
-function decrement(){
-    document.getElementById('hanCounter').stepDown();
+function decrement(param){
+    document.getElementById(param).stepDown();
 }
