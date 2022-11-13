@@ -1,3 +1,11 @@
+function reset(){
+    document.getElementById('dealerCheckbox').checked = false;
+    document.getElementById('hanCounter').value = 1;
+    document.getElementById('fuCounter').value = 30;
+    document.getElementById('honbaCounter').value = 0;
+    scoring();
+}
+
 function increment(param) {
     document.getElementById(`${param}`).stepUp();
     if(document.getElementById(`${param}`).value >= 35){
